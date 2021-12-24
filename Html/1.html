@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+        <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    </head>
+    <body>
+
+<script>
+ function count(){
+     let p = document.getElementById('p').value;
+     let t = document.getElementById('t').value;
+     let r = document.getElementById('r').value;
+     let SI = ((p*t*r)/100);
+     let CI = (parseInt(SI)+parseInt(p));
+    //  document.write("simple interst is:",SI+"<br/>");
+    //  document.write("compound interst is:",CI);
+     document.getElementById('one').innerHTML=SI;
+     document.getElementById('two').innerHTML=CI;
+     
+     
+ }
+
+    </script>
+   <div class="animate__animated animate__fadeInTopLeft">
+    <fieldset style="margin-top: 30px; margin-left: 300px;margin-right: 400px;">
+<legend style="text-align: center;">compound calculator</legend> <br>
+        <label >PA</label>
+        <input id="p" type="number"><br><br>
+        <label>Tm</label>
+        <input id="t" type="number"><br><br>
+        
+        <label>RI</label>
+        <input id="r" type="number"><br><br>
+        <button onclick="count()">calcuate</button><br><br>
+        Simple Interst : <span id="one"></span><br><br>
+        Compound Interst :<span id="two"></span>
+
+       
+        
+
+    </fieldset>
+
+
+
+
+</div> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        
+        
+    </body>
+</html>
